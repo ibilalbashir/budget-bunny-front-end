@@ -7,3 +7,11 @@
 a{
   cursor: pointer;
 }
+ul:hover{
+  background: #c8cace;
+cursor: pointer;
+}
+li{
+  padding:6px;
+
+}

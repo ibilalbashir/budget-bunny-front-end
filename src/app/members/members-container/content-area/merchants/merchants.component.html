@@ -1,9 +1,20 @@
-<mat-card *ngFor='let row of $allMerchants | async' >
+<div class="row">
+
+  <mat-card class=" offest-1 col-5" *ngFor='let row of $allMerchants | async' >
 
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{row?.name}}</mat-card-title>
     <mat-card-subtitle>{{row?.merchantDetails}}</mat-card-subtitle>
   </mat-card-header>
-  <a [routerLink]="['../', row?.id]">details</a>
+  <!-- <a [routerLink]="['../', row?.id]">details</a> -->
+  <button class="btn btn-block btn-success">Generate Coupon</button>
+
 </mat-card>
+</div>
+
+
+
+
+
+

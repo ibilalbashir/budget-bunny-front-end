@@ -28,7 +28,8 @@ export class SignUpComponent implements OnInit {
     const temp = this.signupForm.value;
 
     delete temp['confirmEmail'];
-
+    temp['credit'] = 0;
+console.log(temp);
     this.services.singupFn(temp).subscribe(res => {
       alert('user ' + res['name'] + ' created successfully');
       this.signupForm.reset();

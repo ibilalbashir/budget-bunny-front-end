@@ -21,6 +21,10 @@ export class AuthService {
       return this.http.post(`${this.url}/bunnyUsers/login`, obj);
     }
 
+    loggedIn() {
+      return !!localStorage.getItem('token');
+    }
+
 
 
 }

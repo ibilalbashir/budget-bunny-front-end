@@ -12,6 +12,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CategoryService {
     url = environment.url;
+    access_token = localStorage.getItem('token');
+
 
     constructor(private http: HttpClient) {
 
@@ -19,6 +21,9 @@ export class CategoryService {
 
     getAllCategories(): Observable<Object> {
       return this.http.get(`${this.url}/merchantCategories`);
+    }
+    getMerchantByCategoryId(id): Observable<Object> {
+      return this.http.get(`${this.url}/merchants?filter[where][categoryId][like]=${id}&access_token=${this.access_token}`);
     }
 
 

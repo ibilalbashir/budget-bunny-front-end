@@ -12,7 +12,8 @@ const routes: Routes = [
       {path: 'merchants', component: MerchantsComponent},
 
       {path: 'categories', component: CategoriesComponent},
-      {path: ':id', component: MerchantDetailsComponent}
+      // {path: ':id', component: MerchantDetailsComponent}
+      {path: ':id', component: MerchantsComponent}
     ]
   }
 

@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth.guard';
 import { LoginDialogComponent } from './shared/login-dialog/login-dialog.component';
 import { FooterModule } from './footer/footer.module';
 import { RouterModule } from '@angular/router';
@@ -37,7 +38,7 @@ import { FormsModule } from '@angular/forms';
   entryComponents: [
     LoginDialogComponent
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
