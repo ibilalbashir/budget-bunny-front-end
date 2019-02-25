@@ -1,0 +1,14 @@
+.nav-link{
+  cursor: pointer;
+  margin: 10px;
+}
+nav{
+  font-size: 15px;
+}
+#blue{
+  color:#40ABF3;
+}
+#red{
+  color: #FF3636;
+}
+

@@ -1,0 +1,51 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" [routerLink]="['/home']">Budget Bunny</a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent"  [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+
+        <a class="nav-link" id="blue">begin</a>
+
+        <a class="nav-link" mat-button [matMenuTriggerFor]="marketing">Affiliate Marketing</a>
+        <mat-menu #marketing="matMenu">
+          <a class="nav-link" mat-menu-item>Social media</a>
+          <a class="nav-link" mat-menu-item>Advertising</a>
+        </mat-menu>
+
+        <a class="nav-link" mat-button [matMenuTriggerFor]="income">secondary Income</a>
+        <mat-menu #income="matMenu">
+          <a class="nav-link" mat-menu-item>Minijob</a>
+          <a class="nav-link" mat-menu-item>Online Job</a>
+          <a class="nav-link" mat-menu-item>Student Job</a>
+        </mat-menu>
+        <a class="nav-link" mat-button [matMenuTriggerFor]="investments">investments</a>
+        <mat-menu #investments="matMenu">
+          <a class="nav-link" mat-menu-item>Save up</a>
+          <a class="nav-link" mat-menu-item>Trading</a>
+        </mat-menu>
+
+        <a class="nav-link" mat-button [matMenuTriggerFor]="alternatives">alternative</a>
+        <mat-menu #alternatives="matMenu">
+          <a class="nav-link" mat-menu-item>Insights</a>
+        </mat-menu>
+        <a class="nav-link">Contact</a>
+        <a class="nav-link" [routerLink]="['/signup']">to register</a>
+        <a class="nav-link " id="red" (click)="openLoginDialog()">Login</a>
+
+
+
+
+
+    </ul>
+
+  </div>
+</div>
+</nav>
+
+

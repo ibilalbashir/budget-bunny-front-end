@@ -1,0 +1,54 @@
+<div class="container">
+  <h2>to register</h2><br>
+  <h4><b>your benifits as a member at a glance:</b></h4>
+  <ul>
+    <li>1 cent per Paidmail (3 Euro per month!)</li>
+    <li>Lucrative bonus promotions and bonus mails</li>
+    <li>Paid banner clicks</li>
+    <li>2.50 Euro start bonus</li>
+    <li>Fast payouts via bank, PayPal, Skrill and much more.</li>
+    <li>By canvassed friends to earn</li>
+  </ul>
+  <br>
+  <h5>Registration</h5><br>
+  <h6>Sign up now for bonus bunny!</h6><br>
+
+
+<form [formGroup]="signupForm">
+    <mat-form-field>
+        <mat-label>Your Name:</mat-label>
+        <input matInput placeholder="Name" formControlName="name">
+      </mat-form-field>
+      <br>
+  <mat-form-field>
+    <mat-label>Your Username:</mat-label>
+    <input matInput placeholder="UserName" formControlName="username">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Your Email:</mat-label>
+      <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Repeat Email Address:</mat-label>
+        <input matInput placeholder="Confirm Email" formControlName="confirmEmail">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Password:</mat-label>
+          <input type="password" matInput placeholder="Password" formControlName="password">
+        </mat-form-field>
+        <br>
+        <div class="row">
+          <div class="col-8">
+            <button (click)="onJoinNow()" class="btn btn-outline-primary btn-lg btn-block" [disabled]="signupForm.invalid">Join Now</button>
+          </div>
+        </div>
+        <br>
+
+</form>
+
+
+
+</div>

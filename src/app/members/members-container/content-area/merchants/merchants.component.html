@@ -1,0 +1,9 @@
+<mat-card *ngFor='let row of $allMerchants | async' >
+
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{row?.name}}</mat-card-title>
+    <mat-card-subtitle>{{row?.merchantDetails}}</mat-card-subtitle>
+  </mat-card-header>
+  <a [routerLink]="['../', row?.id]">details</a>
+</mat-card>

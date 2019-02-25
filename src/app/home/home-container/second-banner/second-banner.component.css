@@ -1,0 +1,28 @@
+
+
+.container-fluid {
+  position: relative;
+
+  margin: 0 auto;
+}
+
+.container-fluid img {vertical-align: middle;}
+
+.container-fluid .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);  /*Fallback color */
+   background: rgba(0, 0, 0, 0.5);/* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 181px;;
+  color: #ffc107
+}
+
+button{
+  border-width: 2px;
+}
+
+.row{
+  position: relative;
+}

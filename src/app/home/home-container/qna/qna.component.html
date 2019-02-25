@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+        <h3>Why you should register today?</h3><br>
+        <p>  Bonus Bunny offers members new and exciting ways to earn money every day. If you sign up today, you have options that you may not have tomorrow. It's worth it to be fast.
+
+        As a member of Bonus Bunny, you have by far not just the mentioned sources of revenue that we have mentioned so far. The numerous earning opportunities that reveal themselves to you, you will first get to know in the backend (the members area) of Bonus Bunny. Do not waste another second and be part of the Internet revolution!</p>
+        <br>
+        <button class="btn btn-lg btn-outline-warning" [routerLink]="['signup']" routerLinkActive="router-link-active" >JOIN NOW</button>
+
+    </div>
+    <div class="col-6">
+        <mat-accordion>
+            <mat-expansion-panel expanded>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  What is your passion?
+                </mat-panel-title>
+                <mat-panel-description>
+
+                </mat-panel-description>
+
+              </mat-expansion-panel-header>
+
+              <p>Every person has goals and goals cost money. Whether you want a car, a house or your own company. Bonus Bunny offers you, in addition to your main job, an attractive earning opportunity to fulfill your dreams. Within seconds, you earn the first money. As beautiful as it sounds, it is true!</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  What have you done so far?
+                </mat-panel-title>
+                <mat-panel-description>
+
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>We know that well from our members' thank you letters - you've already done 2 jobs at the same time and the monthly cost just got higher - gas, taxes, rent and more. At Bonus Bunny, you are not employed and therefore do not fall into the sixth tax bracket. You can do the work from home. This gives you more time for yourself, no costly trips to work and can finally spend more time with your family!</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Not convinced yet?
+                </mat-panel-title>
+                <mat-panel-description>
+
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>Ask yourself a question: what do you have to lose? Bonus Bunny is free, social, future-oriented and above all there for you. We are a German, legal and established company. If we were not, you would not have found us for a long time. Do not hesitate, just get started and register to open up new perspectives for yourself.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+
+.close-btn{
+  outline: none !important;
+  box-shadow: none;
+  background: white;
+  cursor: pointer;
+}

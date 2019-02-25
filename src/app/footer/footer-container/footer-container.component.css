@@ -1,0 +1,15 @@
+ul{
+  list-style: none;
+  color: aliceblue;
+  font-size: 14px;;
+}
+.container-fluid{
+  background: #222222;
+}
+.row{
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+b{
+  color: #2D9DE9;
+}
