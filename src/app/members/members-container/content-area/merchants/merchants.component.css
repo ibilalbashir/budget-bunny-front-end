@@ -1,9 +1,22 @@
-mat-card{
+mat-card {
   margin-top: 20px;
   height: 256px;
   width: 90%
 }
 
-mat-card-subtitle{
+mat-card-subtitle {
   height: 123px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.mat-card-title {
+  padding-left: 50px;
+}
+
+.mat-card-subtitle {
+  padding-left: 50px;
 }
